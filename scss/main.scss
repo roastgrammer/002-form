@@ -1,0 +1,110 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    background:#242424;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+.main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 50%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+        margin: 2rem 0;
+        color:#fff;
+        letter-spacing: 5px;
+        
+    }
+    input {
+        width: 15rem;
+        margin: 2rem 0;
+        border:none;
+        outline:none;
+        background:none;
+        color:#fff;
+        font-size: 15px;
+
+        &::placeholder {
+            color:#808080;
+            letter-spacing:5px;
+        }
+    }
+    #first {
+        width: 0;
+        height: 1px;
+        background:orange;
+        position: relative;
+        bottom: 22px;
+    }
+    .test_1 {
+        animation: underline_1 1s forwards ease;
+    }
+    @keyframes underline_1 {
+        from {
+            width:0;
+        }
+        to {
+            width:15rem;
+        }
+    }
+    #seccond {
+        width: 0;
+        height: 1px;
+        background:orange;
+        position: relative;
+        bottom: 22px;
+    }
+    .test_2 {
+        animation: underline_2 1s forwards ease;
+    }
+    @keyframes underline_2 {
+        from {
+            width:0;
+        }
+        to {
+            width:15rem;
+        }
+    }
+
+    button {
+        width: 15rem;
+        height: 3rem;
+        margin: 2rem 0;
+        background:none;
+        border:1px solid #00679e9c;
+        outline:none;
+        font-size: 20px;
+        box-shadow: 0;
+        animation:shadow 1.5s infinite ease;
+        color:#00679e9c;
+        cursor: pointer;
+        @keyframes shadow {
+            0% {
+                box-shadow: 0;
+            }
+            25% {
+                box-shadow: 0 0 15px #00679e9c;
+            }
+            50% {
+                box-shadow: 0 0 15px #00679e9c;
+            }
+            75% {
+                box-shadow: 0 0 15px #00679e9c;
+            }
+            100% {
+                box-shadow: 0 0 15px none;
+            }
+        }
+    }
+}
