@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
@@ -86,4 +86,56 @@ a {
   75% {
     box-shadow: 0 0 15px #00679e9c; }
   100% {
-    box-shadow: 0 0 15px none; } }
+    box-shadow: 0 0 15px none; } } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela&display=swap');
+* {
+  font-family : 'Roboto' , sans-serif;
+  font-family : 'Varela' , sans-serif;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body {
+  background-color:#242424;
+}
+.main {
+  width:50%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align:center;
+  /* line-height: 3; */
+}
+.main h1 {
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+  color:#fff;
+}
+.main input {
+  width:50%;
+  margin: 10px auto;
+  margin-bottom: 50px !important;
+  height: 45px;
+  border:none;
+  outline:none;
+  background-color: #242424;
+}
+.main input:focus {
+  transition:.3s;
+  width: 65%;
+  border-bottom: 1.5px solid orange;
+}
+.main input::placeholder {
+  font-size: 16px;
+  letter-spacing:10px;
+  text-align:center;
+}
+.main input:focus::placeholder {
+  visibility: hidden;
+}
+.main button {
+  width: 50%;;
+  margin:0 auto;
+}
